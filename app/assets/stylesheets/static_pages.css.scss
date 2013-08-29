@@ -7,82 +7,6 @@
 
 
 
-/* --------------------------------------------
-   HTML5 Doctor Reset
--------------------------------------------- */
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content: ""; content: none; }
-ins { background-color: #ff9; color: #000; text-decoration: none; }
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
-del { text-decoration: line-through; }
-abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
-table { border-collapse: collapse; border-spacing: 0; }
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-input, select { vertical-align: middle; }
-
-body { font:13px/1.231 sans-serif; *font-size:small; }
-select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-html { overflow-y: scroll; }
-a:hover, a:active { outline: none; }
-ul, ol { margin-left: 2em; }
-ol { list-style-type: decimal; }
-nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-td { vertical-align: top; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
-textarea { overflow: auto; } 
-.ie6 legend, .ie7 legend { margin-left: -7px; } 
-input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
-button, input, select, textarea { margin: 0; }
-input:valid, textarea:valid   {  }
-input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
-.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
-
-
-::-moz-selection{ background: #000; color:#fff; text-shadow: none; }
-::selection { background:#000; color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #FF5E99; }
-button {  width: auto; overflow: visible; }
-.ie7 img { -ms-interpolation-mode: bicubic; }
-
-body, select, input, textarea { color: #444; }
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-
 
 /* --------------------------------------------
    My Styles
@@ -119,21 +43,6 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
 
 
 
-  
-
-
-
-
- 
-  .logo-holder {
-    position: float;
-    height: 60px;
-    width: 60px;
-    z-index: 500;
-    margin-top: 80px;
-    margin-left: 90px;
-  }
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -146,8 +55,8 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
 }
 
 .navbar-nav{
-  padding-top: 5px;
-  margin-top: 30px;
+  padding-top: 0px;
+  margin-top: 0px;
   margin-left: 15px;
   font-size: 20px;
 } 
@@ -166,7 +75,6 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   left: 0;
   right: 0;
   z-index: 20;
-
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -186,7 +94,7 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   /* Carousel base class */
   .carousel {
     margin-top: 0px;
-    height: 700px;
+    height: 100%;
     width: 100%;
     margin-bottom: 0px;
     background-color: #fff;
@@ -212,25 +120,25 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  border: 0px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 10px;
 }
 
 .carousel-indicators .active {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin: 5;
   background-color: #ffffff;
 }
 
 
   .carousel .item {
-    height: 700px;
+    height: 100%;
     background-color: #fff;
   }
   .carousel img {
     position: relative;
-    height: 700px;
+    height: 100%;
     margin: 0;
     background-color: #fff;
   }
@@ -271,8 +179,8 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
     #content { width: 700px; }
 
   .carousel {width: 100%;}
-  .carousel .item {width:100%; height: 700px; }
-  .carousel img {width: 100%; height: 700px;}
+  .carousel .item {width:100%; height: 100%; }
+  .carousel img {width: 100%; height: 100%;}
   .carousel-indicators {padding-top: 640px;}
 
     
@@ -283,6 +191,9 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   #content article { margin-bottom: 12px; }
     #content article h3 { font-size: 18px; }
     #content article p { font-size: 14px; }
+
+
+    .logo-holder {width: 70px; height: 70px; margin-top: 60px; margin-left: 40px;}
 
 }
 
@@ -303,6 +214,8 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   header { margin-bottom: 12px; }
   header hgroup { margin-bottom: 12px; }
   #content article img { float: none; margin: 0 0 10px 0; width: 100%; }
+
+  .logo-holder {width: 70px; height: 70px; margin-top: 60px; margin-left: 40px;}
 }
 
 
@@ -334,7 +247,7 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   .carousel img {width: 780px; height: 100%;}
   .carousel-indicators {padding-top: 640px;}
 
-  .logo-holder {width: 40px; height: 40px; margin-top: 60px; margin-left: 40px;}
+  .logo-holder {width: 60px; height: 60px; margin-top: 60px; margin-left: 40px;}
 }
 
 
@@ -380,9 +293,27 @@ body { background: #edeae3; font-family: sans-serif; color: #383838; text-align:
   
   #sidebar, #banner { display: none; }
 
-  .carousel {width: 480px;}
-  .carousel .item {width:480px; height: 100%; }
-  .carousel img {width: 480px; height: 100%;}
+  .carousel {width: 600px;}
+  .carousel .item {width:600px; height: 100%; }
+  .carousel img {width: 600px; height: 100%;}
+  .carousel-indicators {padding-top: 640px;}
+
+  .logo-holder {width: 20px; height: 20px; margin-top: 60px; margin-left: 30px;}
+
+}
+
+
+
+@media (max-width: 400px) {
+
+  #container, #content { float: none; width: inherit; }
+    #content { margin: 0; }
+  
+  #sidebar, #banner { display: none; }
+
+  .carousel {width: 400px;}
+  .carousel .item {width:400px; height: 100%; }
+  .carousel img {width: 400px; height: 100%;}
   .carousel-indicators {padding-top: 640px;}
 
   .logo-holder {width: 20px; height: 20px; margin-top: 60px; margin-left: 30px;}
