@@ -1,0 +1,399 @@
+/*some base rules - box-sizing, because it's awesome, and fluid images*/
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  }
+
+
+
+/* --------------------------------------------
+   HTML5 Doctor Reset
+-------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+::-moz-selection{ background: #000; color:#fff; text-shadow: none; }
+::selection { background:#000; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+
+/* --------------------------------------------
+   My Styles
+-------------------------------------------- */
+
+body { background: #edeae3; font-family: sans-serif; color: #383838; text-align: center; }
+  
+  a { color: #9f443b; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  #container { width: 1200px; margin: 0 auto; padding: 20px 0; text-align: left; }
+  
+    header { overflow: hidden; clear: both; margin-bottom: 30px; }
+
+      header hgroup { float: left; }
+        header hgroup h1 { font-size: 40px; text-transform: uppercase; text-shadow: 1px 1px 0 #fff; }
+        header hgroup h2 { font-size: 26px; text-shadow: 1px 1px 0 #fff; font-weight: normal; }
+
+    #content { float: center; width: 100%px; margin-right: 0px; }
+    
+      #content article { background: #fff; margin: 0 0 30px 0; padding: 20px; -webkit-border-radius: 16px; -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3); }
+          
+        #content article h3 { font-size: 26px; margin-bottom: 4px; }
+        #content article img { float: right; margin: 0 0 10px 10px; }
+        #content article p { font-size: 16px; margin-bottom: 16px; }
+        #content article p:last-child { margin-bottom: 0; }
+    
+            
+    footer { clear: both; border-top: 1px solid #383838; padding: 10px 20px; font-size: 14px; }
+    
+      footer nav ul { margin: 0 0 8px 0; padding: 0; }
+        footer nav ul li { list-style: none; display: inline; margin-right: 12px; }
+        
+
+
+
+  
+
+
+
+
+ 
+  .logo-holder {
+    position: float;
+    height: 60px;
+    width: 60px;
+    z-index: 500;
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-brand{
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.navbar-nav{
+  padding-top: 5px;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 20px;
+} 
+
+
+.navbar-inverse .navbar-nav > li.active  > a {
+  color: #fff;
+  border-radius: 7px;
+  background-color: rgba(100,100,100,0.1);
+}
+
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+  
+
+  /* Carousel base class */
+  .carousel {
+    margin-top: 0px;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: #fff;
+  }
+
+  
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-top: 640px;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 0px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 8px;
+  height: 8px;
+  margin: 5;
+  background-color: #ffffff;
+}
+
+
+  .carousel .item {
+    height: 700px;
+    background-color: #fff;
+  }
+  .carousel img {
+    position: relative;
+    height: 700px;
+    margin: 0;
+    background-color: #fff;
+  }
+
+
+
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+
+
+
+
+/* Texts */
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------
+   < 1200px viewport
+-------------------------------------------- */     
+        
+@media (max-width: 1200px) {
+
+  #container { width: 960px; }
+    #content { width: 700px; }
+
+  .carousel {width: 100%;}
+  .carousel .item {width:100%; height: 700px; }
+  .carousel img {width: 100%; height: 700px;}
+  .carousel-indicators {padding-top: 640px;}
+
+    
+  header hgroup h1 { font-size: 32px; }
+  header hgroup h2 { font-size: 18px; }
+  
+
+  #content article { margin-bottom: 12px; }
+    #content article h3 { font-size: 18px; }
+    #content article p { font-size: 14px; }
+
+}
+
+
+/* --------------------------------------------
+  iPad in landscape
+-------------------------------------------- */
+
+/*  
+  TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+  @media (max-width: 1024px) {  } 
+*/
+  
+@media (max-device-width: 1024px) and (orientation: landscape) {
+
+  #container { width: 768px; }
+    #content { width: 540px; }
+  header { margin-bottom: 12px; }
+  header hgroup { margin-bottom: 12px; }
+  #content article img { float: none; margin: 0 0 10px 0; width: 100%; }
+}
+
+
+/* --------------------------------------------
+  iPad in portrait
+-------------------------------------------- */
+
+/*  
+  TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+  @media (max-width: 768px) {  } 
+*/
+
+@media (max-device-width: 1024px) and (orientation: portrait) {
+
+  #container { width: 600px; }
+    #content { float: none; width: 600px; margin: 0 0 12px 0; }
+  header { margin-bottom: 12px; }
+  header hgroup { margin-bottom: 12px; }
+ 
+  #content article { padding: 20px; }
+    #content article img { float: none; margin: 0 0 10px 0; width: 100%; }
+}
+
+
+
+@media (max-width: 780px) {
+  .carousel {width: 780px;}
+  .carousel .item {width:780px; height: 100%; }
+  .carousel img {width: 780px; height: 100%;}
+  .carousel-indicators {padding-top: 640px;}
+
+  .logo-holder {width: 40px; height: 40px; margin-top: 60px; margin-left: 40px;}
+}
+
+
+
+
+
+/* --------------------------------------------
+  Mobile
+-------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  #container, #content { float: none; width: inherit; }
+    #content { margin: 0; }
+
+  .carousel {width: 600px;}
+  .carousel .item {width:600px; height: 100%; }
+  .carousel img {width: 600px; height: 100%;}
+  .carousel-indicators {padding-top: 640px;}
+
+  .logo-holder {width: 30px; height: 30px; margin-top: 60px; margin-left: 30px;}
+
+
+  header { margin: 0 0 12px 0; text-align: center; }
+    header hgroup { width: 100%; margin-bottom: 12px; }
+      header hgroup h1 { font-size: 24px; }
+      header hgroup h2 { font-size: 14px; }
+
+  #content article { padding: 10px; -webkit-border-radius: 0; }
+    #content article h3 { font-size: 16px; }
+    #content article p { font-size: 12px; }
+    #content article img { display: none; }
+  
+  footer { padding: 10px; font-size: 12px; }
+
+}
+
+
+@media (max-width: 480px) {
+
+  #container, #content { float: none; width: inherit; }
+    #content { margin: 0; }
+  
+  #sidebar, #banner { display: none; }
+
+  .carousel {width: 480px;}
+  .carousel .item {width:480px; height: 100%; }
+  .carousel img {width: 480px; height: 100%;}
+  .carousel-indicators {padding-top: 640px;}
+
+  .logo-holder {width: 20px; height: 20px; margin-top: 60px; margin-left: 30px;}
+
+}
+
+
+
+
+
+
+
+
+
