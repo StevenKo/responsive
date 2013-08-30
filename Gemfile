@@ -4,7 +4,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 group :development, :test do
-  gem 'pg', '0.15.1'
+  gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
 end
 
@@ -29,3 +29,15 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor'
 end
+
+
+
+
+
+
+ # Use Omni-Auth
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'oauth2'
+gem 'certified'
